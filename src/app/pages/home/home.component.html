@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <div class="row">
+    <table id="example" class="table table-striped" style="width:100%">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Handle</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let dato of input">
+        <tr>
+            <td>{{ dato.userId }}</td>
+            <td>{{ dato.id }}</td>
+            <td>{{ dato.title }}</td>
+            <td>{{ dato.completed }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
